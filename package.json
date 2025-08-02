@@ -1,0 +1,43 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "description": "Backend server for the AI-powered smart contract wallet.",
+  "main": "dist/server.js",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "lint": "eslint . --ext .ts",
+    "production": "pnpm install --frozen-lockfile && pnpm build && pnpm start"
+  },
+  "dependencies": {
+    "@browserbasehq/stagehand": "^1.14.0",
+    "@ibm-cloud/watsonx-ai": "^1.6.7",
+    "@langchain/community": "^0.3.45",
+    "@langchain/core": "^0.3.57",
+    "@langchain/groq": "^0.2.2",
+    "@langchain/langgraph": "^0.3.0",
+    "@langchain/openai": "^0.5.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.19.2",
+    "ibm-cloud-sdk-core": "^4.0.4",
+    "langchain": "^0.3.27"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.7",
+    "deepmerge": "^4.3.1",
+    "eslint": "^8.57.0",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "zod": "^3.24.1"
+  }
+}

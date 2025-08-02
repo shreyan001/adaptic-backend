@@ -1,0 +1,31 @@
+# Dependencies
+node_modules
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Build outputs
+dist
+build
+
+# Development files
+.git
+.gitignore
+.env
+.env.*
+*.log
+README.md
+.vscode
+.idea
+
+# Test files
+__tests__
+*.test.*
+*.spec.*
+
+# OS files
+.DS_Store
+Thumbs.db
